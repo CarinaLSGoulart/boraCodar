@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blocos de Carnaval</title>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div id="container">
+      <div class="top">
+        <h3>find your block</h3>
+        <h1>Encontre os <span>melhores blocos </span> de carnaval de 2023</h1>
+      </div>
+      <form id="content-search">
+        <div id="searchField">
+          <img src="./assets/search.svg" alt="lupa busca">
+          <label class="sr-only" for="searchName">Pesquise por nome</label>
+          <input type="search" name="searchName" id="searchName" placeholder="Pesquise por nome">
+        </div>
+        <div id="searchField">
+          <img src="./assets/location.svg" alt="localizacao">
+          <label class="sr-only" for="city">Selecione uma cidade</label>
+          <select name="city" id="city">
+            <option value="Selecione" selected>Selecione uma cidade</option>
+            <option value="SE">Aracaju</option>
+            <option value="PA">Belém</option>
+            <option value="MG">Belo Horizonte</option>
+            <option value="RR">Boa Vista</option>
+            <option value="DF">Brasília</option>
+            <option value="MS">Campo Grande</option>
+            <option value="MT">Cuiabá</option>
+            <option value="PR">Curitiba</option>
+            <option value="SC">Florianópolis</option>
+            <option value="CE">Fortaleza</option>
+            <option value="GO">Goiânia</option>
+            <option value="PB">João Pessoa</option>
+            <option value="AM">Macapá</option>
+            <option value="AL">Maceió</option>
+            <option value="AM">Manaus</option>
+            <option value="RN">Natal</option>
+            <option value="TO">Palmas</option>
+            <option value="RS">Porto Alegre</option>
+            <option value="RD">Porto Velho</option>
+            <option value="PE">Recife</option>
+            <option value="AC">Rio Branco</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="BA">Salvador</option>
+            <option value="MA">São Luis</option>
+            <option value="SP">São Paulo</option>
+            <option value="PI">Teresina</option>
+            <option value="ES">Vitória</option>
+          </select>
+          <i class="ph-caret-down"></i>
+        </div>
+        <button id="find">BUSCAR AGORA</button>
+      </form>
+    </div>
+
+
+  </header>
+
+  <main>
+    <div id="content">
+      <div id="title">
+        <h2>Blocos recomendados</h2>
+        <div id="select">
+          <button class="primary">Lista</button>
+          <button class="primary">Mapa</button>
+        </div>
+      </div>
+      <div id="grid-cards">
+        <section>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/sp.svg" alt="Sao Paulo">
+            </div>
+            <div class="content">
+              <h3>O Python do vovô não sobe mais</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">São Paulo - SP</p>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/floripa.svg" alt="Florianopolis">
+            </div>
+            <div class="content">
+              <h3>Todo mundo null</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">Florianópolis - SC</p>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/curitiba.svg" alt="Sao Paulo">
+            </div>
+            <div class="content">
+              <h3>Hoje dou exception</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">Curitiba - PR</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/salvador.svg" alt="Salvador">
+            </div>
+            <div class="content">
+              <h3>Manda Node</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">Salvador - BA</p>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/sp2.svg" alt="Sao Paulo">
+            </div>
+            <div class="content">
+              <h3>Só no back-end</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">São Paulo - SP</p>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/sp3.svg" alt="Sao Paulo">
+            </div>
+            <div class="content">
+              <h3>Esse anel não é de Ruby</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">São Paulo - SP</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/rj.svg" alt="Rio de Janeiro">
+            </div>
+            <div class="content">
+              <h3>Pimenta no C# dos outros é refresco</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">Rio de Janeiro - RJ</p>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/pa.svg" alt="Porto Alegre">
+            </div>
+            <div class="content">
+              <h3>EnCACHE aqui</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">Porto Alegre - RS</p>
+            </div>
+          </div>
+          <div id="cards">
+            <div class="card">
+              <img src="./assets/sp4.svg" alt="Sao Paulo">
+            </div>
+            <div class="content">
+              <h3>Não valho nada, mas JAVA li</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
+            <div id="city">
+              <img src="./assets/location.svg" alt="localizacao">
+              <p class="location">São Paulo - SP</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>
