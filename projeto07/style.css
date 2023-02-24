@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #FFFFFE;
+}
+
+header {
+  background-color: #F8F8FF;
+  min-height: 53.2rem;
+  position: relative;
+
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+
+  background-image: url(./assets/ilustra-01.svg);
+  width: 40.7rem;
+  height: 34.5rem;
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+header::after {
+  content: "";
+  background-image: url(./assets/ilustra-02.svg);
+  width: 41.4rem;
+  height: 33rem;
+
+  position: absolute;
+  right: 0;
+  bottom: -1.2rem;
+  overflow: hidden;
+}
+
+header #container {
+  width: fit-content;
+  margin: auto;
+
+  position: relative;
+  z-index: 1;
+
+  padding: 10rem 0;
+}
+
+header #container .top {
+  text-align: center;
+}
+
+#container h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #E45858;
+}
+
+#container h1 {
+  max-width: 64.7rem;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  text-align: center;
+  color: #121214;
+  margin: 1.8rem auto 0;
+}
+
+span {
+  color: #6246EA;
+
+}
+
+
+#content-search {
+  margin-top: 4rem;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 24px;
+}
+
+#searchField {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2rem 1.4rem;
+  gap: 1.2rem;
+
+  background-color: #F4F4FF;
+  border-radius: 5px;
+}
+
+input,
+select,
+button {
+  font-family: 'Roboto';
+  all: unset;
+}
+
+input,
+select {
+  color: #7C7C8A;
+  text-align: left;
+  align-items: center;
+  line-height: 2.4rem;
+  border: none;
+  background-color: #F4F4FF;
+  min-width: 25rem;
+}
+
+#searchField,
+.select {
+  position: relative;
+}
+
+#searchField {
+  z-index: 1;
+}
+
+#searchField i.ph-caret-down {
+  color: #737380;
+  position: absolute;
+  right: 1rem;
+  z-index: 0;
+}
+
+#content-search button {
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  padding: 1.2rem 3.2rem;
+  gap: .8rem;
+  text-transform: uppercase;
+  background: #6246EA;
+  border-radius: 5px;
+}
+
+#content-search button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  max-width: 121rem;
+  margin: 10rem auto;
+
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+title h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #121214;
+}
+
+#grid-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 4rem 0;
+  gap: 32px;
+
+  width: 121rem;
+  height: 103rem;
+
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+#select {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+#select button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  text-transform: uppercase;
+
+  color: #6246EA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: .4rem 2.4rem;
+  width: 8.8rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#select button:focus {
+  color: white;
+  background-color: #6246EA;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 1rem;
+  max-width: 38.4rem;
+  overflow: hidden;
+
+}
+
+#cards .content {
+  display: grid;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+#city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#city img {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.location {
+  padding: 0.5rem;
+
+}
+
+@media (max-width: 768px) {
+  #content-search {
+    flex-direction: column;
+  }
+}
